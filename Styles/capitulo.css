@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --white: #fcfaf4;
+    --black: #242424;
+    --purple: #615da7;
+    --darkpurple: #2e295f;
+    --lightpurple: #9395bc;
+    --darkgrey: #949494;
+    --lightgrey: #c8c8c8;
+    --highlight: #f5cd75;
+    --green: #054B1F;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url(/Imagenes/capitulos/fondo.webp);
+    background-size: cover; /* Cubrir toda el área */
+    background-position: center; /* Centrar la imagen */
+    background-attachment: fixed; /* Mantener la imagen fija */
+    height: 100vh; /* Asegura que ocupe toda la altura */
+}
+
+.fr {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+h2, h3 {
+    margin: 10px 0;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.carta-contenedor {
+    position: relative;
+    max-width: 800px; /* Tamaño aumentado de la carta */
+    margin: 0 auto;
+}
+
+.carta-imagen {
+    width: 100%; 
+    border-radius: 8px;
+}
+
+.sello-imagen {
+    position: absolute; /* Posicionar el sello de forma absoluta */
+    top: 20px; /* Ajustar la posición vertical */
+    left: 20px; /* Ajustar la posición horizontal */
+    width: 400px; /* Tamaño aumentado del sello (aproximadamente la mitad de la carta) */
+    height: auto;
+}
+
+.carta-texto {
+    position: absolute; /* Posicionar el texto de forma absoluta */
+    top: 50%; /* Centrar verticalmente */
+    left: 375px; /* Colocar el texto a la derecha del sello */
+    transform: translateY(-50%); /* Ajustar para centrar completamente */
+    right: 100px; /* Ajustar el espacio a la derecha */
+    color: black; /* Color del texto */
+    font-size: 1.4rem; /* Tamaño de la fuente */
+    text-align: justify; /* Justificar el texto */
+    padding: 0; /* Sin padding adicional */
+    width: 350px; /* Limitar el ancho del texto para ajustarlo */
+}
+
+/* Segunda sección: Capítulos Clave de la Historia */
+.contenido-principal {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.seccion-titulo {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.capitulo {
+    display: flex;
+    background-color: #222;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+    align-items: center;
+    padding: 20px;
+    width: 1200px; /* Asegura que todas las tarjetas sean iguales */
+    max-width: 1300px; /* Limita el tamaño máximo de la tarjeta */
+    height: 200px; /* Aumenta la altura de las tarjetas */
+    position: relative;
+}
+
+.capitulo img {
+    width: 300px; /* Aumenta el ancho de la imagen */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.capitulo-texto {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; /* Centra el texto horizontalmente */
+    width: 60%; /* Limita el ancho del texto a la parte derecha */
+    margin-left: auto;
+}
+
+.capitulo-texto h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.capitulo-texto p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.1;
+    text-align: justify;
+    letter-spacing: -0.5px;
+}
+
+.contenido-principal button {
+    background-color: #054B1F;
+    color: var(--white);
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.capitulo-imagen {
+    cursor: pointer;
+}

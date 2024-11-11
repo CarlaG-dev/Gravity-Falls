@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* VARIABLES DE COLOR */
+:root {
+    --white: #fcfaf4;
+    --black: #242424;
+    --purple: #615da7;
+    --darkpurple: #2e295f;
+    --lightpurple: #9395bc;
+    --darkgrey: #949494;
+    --lightgrey: #c8c8c8;
+    --highlight: #f5cd75;
+    --green: #054B1F; 
+}
+
+/* Estilos generales */
+body {
+    background-image: url(/Imagenes/capitulos/fondoCaba.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Formulario */
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+.loginr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.login-form {
+    max-width: 500px; /* Limita el ancho del formulario */
+    width: 100%;
+    padding: 40px;
+    background: var(--white);
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    margin: 0 auto;
+}
+
+.login-form h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 2.4em; /* Aumentar tamaño del encabezado */
+    color: var(--black);
+    text-align: center;
+    font-weight: 700; /* Peso de fuente más fuerte */
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column; /* Mantiene el diseño en columna */
+}
+
+.form-fields label {
+    display: block;
+    margin-bottom: 8px; /* Espaciado entre etiqueta y campo */
+    font-weight: bold;
+    color: var(--black);
+}
+
+.form-fields input {
+    width: 90%; 
+    max-width: 400px; 
+    padding: 12px; 
+    margin-bottom: 20px; 
+    border: 1px solid var(--darkgrey);
+    border-radius: 6px; 
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+    align-self: center; 
+}
+
+.form-fields input:focus {
+    border-color: var(--purple); 
+    outline: none; 
+    box-shadow: 0 0 5px var(--purple); 
+}
+
+.form-fields button {
+    width: 90%; 
+    max-width: 400px;
+    padding: 12px; 
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 6px; 
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s, box-shadow 0.2s; /* Efecto de transformación en el hover */
+    align-self: center; /* Centrar el botón en el contenedor */
+}
+
+.form-fields button:hover {
+    background-color: #043a15;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.register-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.register-link a {
+    color: var(--purple);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+    color: var(--lightpurple); 
+}
+
+
+.image-preview {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+#pic-preview {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px; 
+}
+
+.image-preview button {
+    padding: 8px; 
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 6px; 
+    font-size: 14px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.image-preview button:hover {
+    background-color: #043a15;
+}

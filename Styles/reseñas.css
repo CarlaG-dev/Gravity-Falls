@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --white: #fcfaf4;
+    --black: #242424;
+    --purple: #615da7;
+    --darkpurple: #2e295f;
+    --lightpurple: #9395bc;
+    --darkgrey: #949494;
+    --lightgrey: #c8c8c8;
+    --highlight: #f5cd75;
+    --green: #054B1F;
+}
+
+body {
+  height: 100vh; 
+  background-image: url(/Imagenes/reseñas/fondo.webp); /* Imagen de fondo */
+  background-size: cover; /* La imagen cubre toda el área */
+  background-position: center; /* Centrar la imagen */
+  background-attachment: fixed; /* La imagen se mantiene fija al hacer scroll */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alineación hacia el principio */
+  align-items: center;
+  padding: 0;
+}
+
+#comentarios {
+  width: 1150px;
+  margin: 10px auto;
+}
+
+.encabezado {
+    width: 100%;
+    height: 120px;
+    border: 3px solid var(--darkpurple);
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.cajaC {
+    width: 490px;
+    height: 250px;
+    background-color: white;
+    margin: 20px;
+    border: 3px solid gold;
+    float: left;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.perfil {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.texto-comentario {
+    flex: 1;
+    text-align: justify;
+    padding: 25px;
+}
+
+h3, h4 {
+    margin: 5px 0;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.stars {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: grey;
+    font-size: 1.5em;
+}
+
+#comentarios h2 {
+    color: var(--white);
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+/* Comentario section */
+.comentario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+.comentario-contenido {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    display: block;
+}
+
+.comentario h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.comentario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comentario label {
+    font-weight: bold;
+    color: #333;
+}
+
+.comentario input, .comentario textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.comentario input::placeholder, .comentario textarea::placeholder {
+    color: #aaa;
+}
+
+.comentario button {
+    background-color: var(--green);
+    margin-top: 15px;
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    align-self: center;
+}
+
+.comentario button:hover {
+    background-color: #218838;
+}
